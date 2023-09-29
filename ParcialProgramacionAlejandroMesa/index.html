@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+    <title>Parcial Web</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Formulario</h1>
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="apellido" placeholder="Ingresa tu Apellido" >
+            <label for="floatingInputDisabled">Apellido</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="nombre" placeholder="Ingresa Tu nombre" >
+            <label for="floatingTextareaDisabled">Nombre</label>
+          </div>
+
+          <div class="form-floating mb-3">
+            <select class="form-select" aria-label="Default select example" id="deparment">
+            </select>
+            <label for="floatingSelectDisabled">Departamento</label>
+          </div>
+          
+          <div class="form-floating mb-3">
+            <select class="form-select" aria-label="Default select example" id="municipio">
+            </select>
+            <label for="floatingSelectDisabled">Municipio</label>
+          </div>
+          <div class="form-floating mb-3">
+          <input type="date" class="form-control" id="fecha" name="fecha"  placeholder="Selecciona ">
+          <label for="floatingSelectDisabled">Selecciona una fecha de tu cumpleanos:</label>
+        </div>
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="salario" placeholder="Ingresa Tu salario" >
+            <label for="floatingTextareaDisabled">Salario</label>
+          </div>
+          <button style="width: 100%" ;type="button"  class="btn btn-outline-success onclick="agregarEmpleado()">Agregar Empleado</button>
+    </div>
+    <div class="container">
+           <div style="width: 100%; max-width: 800px; margin: 0 auto; margin-top: 30px;">
+        <div class="input-group" style="border: 2px solid lightblue;">
+            <span class="input-group-text">Empleados Id</span>
+            <select class="form-select" aria-label="Default select example" id="empleado">
+            </select>
+            <button style="width: 100%;" type="button" class="btn btn-outline-success" onclick="filtrarPorID()">Consult</button>
+        </div>
+    </div>
+    <div style="width: 100%; max-width: 1400px; margin: 0 auto; margin-top: 30px;">
+        <table id="tabla" class="table table-bordered border-primary">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Apellido</th>
+                    <th>Nombre</th>
+                    <th>Departamento</th>
+                    <th>Municipio</th>
+                    <th>Fecha de Cumpleaños</th>
+                    <th>Salario</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
